@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://likable-burt-superlaboriously.ngrok-free.dev';
+const API_BASE_URL = 'http://localhost:8080';
 
 const NGROK_EXTRA_HEADERS = API_BASE_URL.includes('ngrok')
   ? { 'ngrok-skip-browser-warning': 'true' }
