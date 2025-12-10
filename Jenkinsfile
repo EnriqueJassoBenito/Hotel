@@ -5,7 +5,7 @@ pipeline {
         stage('Stopping services') {
             steps {
                 sh '''
-                    docker compose -p gmu down || true
+                    docker compose -p hoteles down || true
                 '''
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Deleting old images') {
             steps{
                 sh '''
-                    IMAGES=$(docker images --filter "label=com.docker.compose.project=gmu" -q)
+                    IMAGES=$(docker images --filter "label=com.docker.compose.project=hoteles" -q)
                     if [ -n "$IMAGES" ]; then
                         docker rmi -f $IMAGES
                     fi
