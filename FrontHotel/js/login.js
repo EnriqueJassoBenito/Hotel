@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'http://44.216.242.226:8080';
 
 const NGROK_EXTRA_HEADERS = API_BASE_URL.includes('ngrok')
   ? { 'ngrok-skip-browser-warning': 'true' }
