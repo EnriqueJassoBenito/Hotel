@@ -1,5 +1,5 @@
-const STATIC_CACHE = 'app-shell-v1';
-const DYNAMIC_CACHE = 'dynamic-cache-v1';
+const STATIC_CACHE = 'app-shell-v2';
+const DYNAMIC_CACHE = 'dynamic-cache-v2';
 
 const APP_SHELL_ASSETS = [
   './',
@@ -10,16 +10,13 @@ const APP_SHELL_ASSETS = [
   './pages/camareras.html',
   './pages/camarera-dashboard.html',
 
-  './js/login.js',
   './js/incidente.js',
   './js/historial.js',
   './js/habitaciones.js',
   './js/db.js',
   './js/camareras.js',
   './js/camarera-dashboard.js',
-  './js/auth.js',
 
-  './mainmanifest.json',
   './register.js',
   './styles.css',
   './images/icons/192.png',
