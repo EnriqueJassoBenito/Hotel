@@ -14,7 +14,7 @@ public class DataInitializer {
     CommandLineRunner initDefaultUsers(UsuarioRepository usuarioRepository) {
         return args -> {
 
-            if (!usuarioRepository.existsByUsername("recepcion")) {
+            if (!usuarioRepository.existsByUsername("admin")) {
                 Usuario recep = new Usuario();
                 recep.setNombre("Recepción Admin");
                 recep.setUsername("admin");
@@ -28,7 +28,7 @@ public class DataInitializer {
             if (!usuarioRepository.existsByUsername("camarera")) {
                 Usuario cam = new Usuario();
                 cam.setNombre("Camarera Default");
-                cam.setUsername("pepe");
+                cam.setUsername("camarera");
                 cam.setPassword("1234");
                 cam.setRol(RolUsuario.LIMPIEZA);
                 cam.setActivo(true);
