@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <!-- Indica a Safari que la aplicación puede ejecutarse en modo fullscreen/standalone -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<!-- Define el estilo de la barra de estado (hora, batería) en iOS -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<!-- Icono principal de alta resolución para la pantalla de inicio de iOS -->
-  <link rel="apple-touch-icon" href="../images/icons/180.png" sizes="180x180">
-<!-- Opcional: Icono sin el efecto de brillo que Safari aplica por defecto (si quieres control
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Define el estilo de la barra de estado (hora, batería) en iOS -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Icono principal de alta resolución para la pantalla de inicio de iOS -->
+  <link rel="apple-touch-icon" href="./images/icons/180.png" sizes="180x180">
+  <!-- Opcional: Icono sin el efecto de brillo que Safari aplica por defecto (si quieres control
 total) -->
-<link rel="stylesheet" href="./styles.css">
-<link rel="apple-touch-icon-precomposed"
-href="./images/icons/180.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="apple-touch-icon-precomposed" href="./images/icons/180.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Hotel Housekeeping - Login</title>
@@ -37,7 +37,7 @@ href="./images/icons/180.png">
       padding: 2rem;
       border-radius: 1rem;
       background: #fff;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
     .app-logo {
@@ -64,6 +64,7 @@ href="./images/icons/180.png">
   </style>
 
 </head>
+
 <body>
 
   <div class="login-card text-center">
@@ -74,24 +75,24 @@ href="./images/icons/180.png">
     <h4 class="fw-bold mb-4">Hotel Housekeeping</h4>
 
     <form id="login-form">
-  <div class="mb-3 text-start">
-    <label class="form-label">Correo</label>
-    <input id="input-username" type="text" class="form-control" placeholder="usuario@correo.com" required>
-  </div>
+      <div class="mb-3 text-start">
+        <label class="form-label">Correo</label>
+        <input id="input-username" type="text" class="form-control" placeholder="usuario@correo.com" required>
+      </div>
 
-  <div class="mb-4 text-start">
-    <label class="form-label">Contraseña</label>
-    <input id="input-password" type="password" class="form-control" placeholder="••••••••" required>
-  </div>
+      <div class="mb-4 text-start">
+        <label class="form-label">Contraseña</label>
+        <input id="input-password" type="password" class="form-control" placeholder="••••••••" required>
+      </div>
 
-  <div id="login-error" class="alert alert-danger py-2 px-3 d-none text-start">
-    Usuario o contraseña incorrectos.
-  </div>
+      <div id="login-error" class="alert alert-danger py-2 px-3 d-none text-start">
+        Usuario o contraseña incorrectos.
+      </div>
 
-  <button type="submit" class="btn btn-primary w-100 login-btn">
-    Iniciar Sesión
-  </button>
-</form>
+      <button type="submit" class="btn btn-primary w-100 login-btn">
+        Iniciar Sesión
+      </button>
+    </form>
 
 
   </div>
@@ -102,4 +103,5 @@ href="./images/icons/180.png">
   <script src="./register.js"></script>
 
 </body>
+
 </html>

@@ -13,7 +13,7 @@ function checkAuth(allowedRoles) {
 
   // Si no hay token → al login
   if (!token) {
-    window.location.href = '/FrontHotel/index.html';
+    window.location.href = '/';
     return;
   }
 
@@ -21,11 +21,11 @@ function checkAuth(allowedRoles) {
   if (!allowedRoles.includes(rol)) {
     // Redirigimos a SU página correcta
     if (rol === 'RECEPCION') {
-      window.location.href = '/FrontHotel/pages/habitaciones.html';
+      window.location.href = '/pages/habitaciones.html';
     } else if (rol === 'LIMPIEZA') {
-      window.location.href = '/FrontHotel/pages/camarera-dashboard.html';
+      window.location.href = '/pages/camarera-dashboard.html';
     } else {
-      window.location.href = '/FrontHotel/index.html';
+      window.location.href = '/';
     }
   }
 }
@@ -48,7 +48,7 @@ async function authFetch(url, options = {}) {
 
   if (response.status === 401 || response.status === 403) {
     localStorage.clear();
-    window.location.href = '/FrontHotel/index.html';
+    window.location.href = '/';
   }
 
   return response;
@@ -56,6 +56,6 @@ async function authFetch(url, options = {}) {
 
 function logout() {
   localStorage.clear();   // elimina token, rol, username, nombre, userId, etc.
-  window.location.href = '/FrontHotel/index.html';
+  window.location.href = '/';
 }
 
